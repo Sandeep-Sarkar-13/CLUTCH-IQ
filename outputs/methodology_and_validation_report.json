@@ -1,0 +1,41 @@
+{
+  "project": "CLUTCH IQ 2.0",
+  "status": "Upgraded research implementation: WPL is expected absolute win-probability movement over a past-only joint delivery-outcome distribution; first-innings par is a fold-specific historical state model. Requires calibration and subgroup validation before final competition claims.",
+  "thresholds": {
+    "relaxed": {
+      "pressure_matches": 5,
+      "normal_matches": 5,
+      "pressure_balls": 40,
+      "normal_balls": 75
+    },
+    "current": {
+      "pressure_matches": 8,
+      "normal_matches": 8,
+      "pressure_balls": 60,
+      "normal_balls": 100
+    },
+    "strict": {
+      "pressure_matches": 12,
+      "normal_matches": 12,
+      "pressure_balls": 100,
+      "normal_balls": 150
+    }
+  },
+  "weights": {
+    "msd": 0.25,
+    "wpl": 0.3,
+    "rsi": 0.2,
+    "ssi": 0.15,
+    "pep": 0.1
+  },
+  "wpl_definition": "WPL(S) = sum_o P(o|S) * abs(WP(S_o)-WP(S)). Outcome o jointly represents team runs (0..6 or 7+), wicket indicator, and legal-ball indicator. Conditional probabilities use only prior-fold deliveries and Dirichlet smoothing toward the fold-wide outcome distribution.",
+  "par_definition": "A fold-specific HistGradientBoostingRegressor predicts the expected score_before at each first-innings state from match format, legal balls elapsed, wickets lost, innings length and phase. It is trained only on earlier matches. Par deficit = predicted par score - actual pre-delivery score.",
+  "required_review": [
+    "Inspect WPL outcome support and WP calibration by format, innings and phase.",
+    "Inspect first-innings par MAE and prediction bias by phase and wickets-lost band.",
+    "Run pressure-weight ablation and weight sensitivity.",
+    "Reserve 2026 as a final untouched holdout during model/weight selection.",
+    "Audit no-ball/Overstep and batter balls-faced scoring convention against official data dictionary.",
+    "Report format-specific T20/T20I robustness and minimum eligible-player coverage."
+  ]
+}

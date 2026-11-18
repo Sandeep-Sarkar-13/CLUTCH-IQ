@@ -1,0 +1,150 @@
+{
+  "expected_performance": [
+    {
+      "year": 2022,
+      "rows": 31694,
+      "batter_runs_mae": 1.21616037127513,
+      "bowler_runs_mae": 1.2046553269602223
+    },
+    {
+      "year": 2023,
+      "rows": 32988,
+      "batter_runs_mae": 1.2470100712545407,
+      "bowler_runs_mae": 1.234662702750547
+    },
+    {
+      "year": 2024,
+      "rows": 44790,
+      "batter_runs_mae": 1.2674541573253915,
+      "bowler_runs_mae": 1.2564930371797114
+    },
+    {
+      "year": 2025,
+      "rows": 47636,
+      "batter_runs_mae": 1.283303306826917,
+      "bowler_runs_mae": 1.271889502299264
+    },
+    {
+      "year": 2026,
+      "rows": 33082,
+      "batter_runs_mae": 1.355803075470582,
+      "bowler_runs_mae": 1.3417361003907227
+    }
+  ],
+  "win_probability": [
+    {
+      "year": 2022,
+      "rows": 31311,
+      "brier": 0.17282056081896632,
+      "log_loss": 0.5690851692217073,
+      "roc_auc": 0.8206756303724803,
+      "expected_calibration_error": 0.026471752780302955
+    },
+    {
+      "year": 2023,
+      "rows": 32686,
+      "brier": 0.18945721405027613,
+      "log_loss": 0.5596833494834992,
+      "roc_auc": 0.7886876288466197,
+      "expected_calibration_error": 0.0464362100204872
+    },
+    {
+      "year": 2024,
+      "rows": 44381,
+      "brier": 0.185281901252755,
+      "log_loss": 0.5413757864857232,
+      "roc_auc": 0.7929889918395397,
+      "expected_calibration_error": 0.01909228123868163
+    },
+    {
+      "year": 2025,
+      "rows": 46240,
+      "brier": 0.17143655671061966,
+      "log_loss": 0.5034138179732902,
+      "roc_auc": 0.8231483752442904,
+      "expected_calibration_error": 0.02909888832523428
+    },
+    {
+      "year": 2026,
+      "rows": 32631,
+      "brier": 0.1869247193675737,
+      "log_loss": 0.543940295713085,
+      "roc_auc": 0.7913576360221115,
+      "expected_calibration_error": 0.04027264854134784
+    }
+  ],
+  "first_innings_par_model": [
+    {
+      "year": 2022,
+      "rows": 16584,
+      "calibration_offset": 4.757394484985813,
+      "par_score_mae": 11.143557536403264,
+      "par_score_bias_pred_minus_actual": 1.7150545245285194
+    },
+    {
+      "year": 2023,
+      "rows": 17309,
+      "calibration_offset": 2.0655752310091384,
+      "par_score_mae": 11.617051352253572,
+      "par_score_bias_pred_minus_actual": -3.4657918604962714
+    },
+    {
+      "year": 2024,
+      "rows": 23456,
+      "calibration_offset": 3.961215833628488,
+      "par_score_mae": 13.511570241405366,
+      "par_score_bias_pred_minus_actual": -0.3979723120196448
+    },
+    {
+      "year": 2025,
+      "rows": 25412,
+      "calibration_offset": 0.6982113332533315,
+      "par_score_mae": 13.795092836058492,
+      "par_score_bias_pred_minus_actual": -2.8194284770556712
+    },
+    {
+      "year": 2026,
+      "rows": 17468,
+      "calibration_offset": -1.5209479848075285,
+      "par_score_mae": 15.40704662321332,
+      "par_score_bias_pred_minus_actual": -9.941135780879588
+    }
+  ],
+  "win_probability_leverage": [
+    {
+      "year": 2022,
+      "wpl_raw_mean": 0.015330123284393298,
+      "wpl_raw_q95": 0.045587652052134775,
+      "wpl_scaled_mean": 0.2954669556228282,
+      "wpl_scaled_q95": 0.8916748867806685
+    },
+    {
+      "year": 2023,
+      "wpl_raw_mean": 0.015299727935011392,
+      "wpl_raw_q95": 0.03397151822196829,
+      "wpl_scaled_mean": 0.39215235229144707,
+      "wpl_scaled_q95": 0.9934616634128358
+    },
+    {
+      "year": 2024,
+      "wpl_raw_mean": 0.015020231810454856,
+      "wpl_raw_q95": 0.03100921943057875,
+      "wpl_scaled_mean": 0.43496157120548695,
+      "wpl_scaled_q95": 0.9739428336434988
+    },
+    {
+      "year": 2025,
+      "wpl_raw_mean": 0.014547520962016803,
+      "wpl_raw_q95": 0.03496672401870884,
+      "wpl_scaled_mean": 0.38370752991050744,
+      "wpl_scaled_q95": 0.8953113854425923
+    },
+    {
+      "year": 2026,
+      "wpl_raw_mean": 0.013874714978013404,
+      "wpl_raw_q95": 0.03230588712567918,
+      "wpl_scaled_mean": 0.3922963205346547,
+      "wpl_scaled_q95": 0.9151966453101026
+    }
+  ]
+}
